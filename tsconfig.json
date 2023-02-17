@@ -1,24 +1,32 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@modules/*": ["src/components/modules/*"],
+            "@core/*": ["src/core/*"],
+            "@utils/*": ["src/core/utils/*"],
+            "@config/*": ["src/core/config/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@assets/*": ["public/assets/*"],
+            "@styles/*": ["public/styles/*"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "paths": ["node_modules/*", "src/utils/types/*"],
+    "exclude": ["node_modules"]
 }
